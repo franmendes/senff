@@ -19,17 +19,4 @@ describe("Signup", () => {
 
     cy.contains("button", "Sign up").click();
   });
-
-  // it('should show validation errors for empty fields', () => {
-  //   cy.get('button[type="submit"]').click();
-  //   cy.get('.error').should('have.length', 3);
-  // });
-
-  // it('should show validation error for invalid email', () => {
-  //   cy.get('input[name="username"]').type('testuser');
-  //   cy.get('input[name="email"]').type('invalid-email');
-  //   cy.get('input[name="password"]').type('Password123!');
-  //   cy.get('button[type="submit"]').click();
-  //   cy.get('.error').should('contain', 'Invalid email address');
-  // });
 });

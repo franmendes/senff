@@ -26,7 +26,7 @@ describe("Login", () => {
     cy.get("#loginusername").type("teste2708");
     cy.get("#loginpassword").type("teste2708");
 
-    cy.contains("button", "Log in").click();
+    cy.contains("button", /^Log in$/i).click();
 
     cy.get("#nameofuser").should("contain", "Welcome teste2708");
   });
